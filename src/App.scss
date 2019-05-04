@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Montserrat|Bungee+Inline');
+
+$base-unit: 18px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+ padding: 2 * $base-unit;
+ max-width: 100%;
+ font-size: $base-unit;
+ background-image: url('https://shoutitout-a.akamaihd.net/wp-content/uploads/2016/10/90s-website-style.jpg');
+ font-family: 'Montserrat', sans-serif;
+
+ .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ }
+
+ >h1 {
+  font-family: 'Bungee Shade', cursive;
+  box-shadow: 5px 5px black;
+  border: 3px solid black;
+  border-radius: 4px;
+  padding: $base-unit;
+  margin-bottom: $base-unit;
+  text-align: center;
+
+  &.peach {
+    background-color: palevioletred;
+  }
+ }
+
+ >h2 {
+  font-family: 'Bungee Shade', cursive;
+  box-shadow: 5px 5px black;
+  border: 3px solid black;
+  border-radius: 4px;
+  padding: $base-unit;
+  text-align: center;
+ }
+
+
+ .Button {
+  background-color: lighten($color: teal, $amount: 20);
+  padding: $base-unit;
+  border-radius: 4px;
+  box-shadow: 5px 5px black;
+  border: 3px solid black;
+  display: flex;
+  transition: all .25s;
+  text-align: center;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: lighten($color: coral, $amount: 20);
+    box-shadow: 8px 8px black;
+    cursor: pointer;
+  }
+
+  &:focus {
+    border: 3px solid blueviolet;
+    outline: none;
+  }
+
+  &:active {
+    transform: translate(3px, 3px);
+    box-shadow: 5px 5px black;
+  }
+ }
+}
+
+.yellow {
+  background-color: #ffcc66;
+}
+
+.red {
+  background-color: palevioletred;
+}

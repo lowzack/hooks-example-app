@@ -1,0 +1,24 @@
+.Profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 { 
+        font-family: 'Bungee Shade', cursive;
+       }
+      
+    h3 {
+        font-family: 'Bungee Inline', cursive;
+    }
+
+    ul {
+        list-style: none;
+        li {
+            list-style: none;
+            padding: .25em 0;
+        }
+    }
+    &-image {
+
+    }
+}
