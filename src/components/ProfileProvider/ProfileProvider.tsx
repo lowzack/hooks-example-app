@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {Profile, useRandomProfile } from '../../hooks/useProfile';
 
-type ProfileContext = {
+type ProfileState = {
     profile?: Profile,
     switchProfile: Function
 }
 
-const ProfileContext = React.createContext<ProfileContext>({ switchProfile: () => {} });
+const ProfileContext = React.createContext<ProfileState>({ switchProfile: () => {} });
+
+export const useProfile = () => useContext(ProfileContext);
 
 export const ProfileContextProvider: React.FC = ({ children }) => {
     const context = useRandomProfile();
